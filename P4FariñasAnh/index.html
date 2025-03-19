@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<!-- La página está en GitHub -->
+<body>
+    <!-- Menú de navegación (Flexbox) -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#sobre-mi">Sobre Mí</a>
+                </li>
+                <li>
+                    <a href="#proyectos">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#idiomas">Idiomas</a>
+                </li>
+                <li>
+                    <a href="#experiencia">Experiencia</a>
+                </li>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Sección de inicio (Flexbox) -->
+    <section id="inicio">
+        <img src="img/profile.jpg" alt="Mi foto">
+        <div class="texto-inicio">
+            <h2>Anh Friñas Garrido</h2>
+            <h4>Desarrolladora de Applicaciones Multiplataforma</h4>
+            <p>
+                En el proceso de adquirir y consolidar experiencia tanto en el aprendizaje 
+                teórico como en la implementación práctica, me especializo en el desarrollo 
+                de soluciones backend, donde la optimización de la lógica, la arquitectura 
+                eficiente y el impulso hacia la innovación tecnológica constituyen pilares 
+                esenciales para el crecimiento y la excelencia profesional.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Sección Sobre Mí (Grid y Flex) -->
+    <section id="sobre-mi">
+        <h2 class="grid-container">Sobre Mí</h2>
+        <div class="grid-container01">
+            <div class="hab1">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>Java, Python, C++</li>¡
+                    <li>SQL, MongoDB</li>
+                </ul>
+            </div>
+            <div class="hab2">
+                <h3>Formación</h3>
+                <p>1º año de Desarrollo de Applicaciones Multiplataformas (2024-25)</p>
+                <p>Bachillerato de Ciencia (2022-24)</p>
+            </div>
+        </div>
+            
+        <div class="grid-container02">
+            <h3>Intereses</h3>
+            <p>
+                Mis principales intereses se centran en el desarrollo web 
+                y la creación de aplicaciones multiplataforma, enfocándome en la 
+                construcción de soluciones eficientes y adaptativas. Además, me atrae el 
+                campo de la inteligencia artificial, explorando su integración para 
+                optimizar procesos y mejorar la experiencia del usuario.
+            </p>
+        </div>
+
+        <div class="grid-container03">
+            <div class="cv1">
+                <img src="img/CV.jpg" alt="rocket-startup-successful-launch-project-symbol-1640254-pxhere.com">
+            </div>
+            
+            <div class="cv2">
+                <h3>Habilidades blandas</h3>
+                <ul>
+                    <li>Colaboración y trabajo en equipo.</li>
+                    <li>Disciplina, pensamiento y capacidad de concentración.</li>
+                    <li>Adaptabilidad al nuevo entorno.</li>
+                </ul>
+            </div>
+
+            <div class="cv3">
+                <h3>Tecnología favoritas</h3>
+                <ul>
+                    <li>Intellij, VSCode, NetBeans y Eclipse</li>
+                    <li>PSeInt, Draw.io y Figma</li>
+                    <li>OBS Studio, Adobe Photoshop, Clip Studio Paint, Ibis Paint</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Destacados (Flexbox y Grid) -->
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="proyectos-container">
+            <div class="proyecto">
+                <a href="https://github.com/MizoreArai/Proyecto-del-1-Trimestre.git"><img src="img/p1.png" alt="Proyecto 1" class="imagen-p"></a>
+                <h3>Proyecto Java</h3>
+                <p>Una colección de proyectos simples que incluyen anotaciones detalladas sobre el funcionamiento de los comandos más utilizados en Java. Ideal para fortalecer las bases y explorar las capacidades del lenguaje.</p>
+            </div>
+
+            <div class="proyecto">
+                <a href="https://github.com/MizoreArai/Minigame-for-Sil.git"><img src="img/p2.png" alt="Proyecto 2" class="imagen-p"></a>
+                <h3>Juego de Preguntas y Respuestas</h3>
+                <p>Un proyecto interactivo en Python que presenta una serie de preguntas y respuestas, acompañado de mensajes de texto dinámicos y atractivos para mejorar la experiencia del usuario.</p>
+            </div>
+
+            <div class="proyecto">
+                <a href="https://github.com/MizoreArai/HTML-Projects-vs-Minigame.git"><img src="img/p3.png" alt="Proyecto 3" class="imagen-p"></a>
+                <h3>Sitio Web de Comida</h3>
+                <p>Un sitio web responsive dedicado a la gastronomía, que incluye una sección de menú detallada y una página especial con contenido sobre gatos, además de un divertido minijuego integrado.</p>
+            </div>
+        </div>
+
+        <button id="button-git">
+            <a href="https://github.com/MizoreArai?tab=repositories">Ver más en mi GitHub</a>
+        </button>
+    </section>
+
+    <!-- Sección Idiomas (Tablas) -->
+    <section id="idiomas">
+        <h2>Idiomas</h2>
+        <table>
+            <tr>
+                <th>Idioma</th>
+                <th>Nivel</th>
+            </tr>
+            <tr>
+                <td>Vietnamita</td>
+                <td>Nativo</td>
+            </tr>
+            <tr>
+                <td>Español</td>
+                <td>Nativo</td>
+            </tr>
+            <tr>
+                <td>Gallego</td>
+                <td>Nativo</td>
+            </tr>
+            <tr>
+                <td>Inglés</td>
+                <td>Avanzado</td>
+            </tr>
+            <tr>
+                <td>Francés</td>
+                <td>Intermedio</td>
+            </tr>
+            <tr>
+                <td>Italiano</td>
+                <td>Intermedio</td>
+            </tr>
+            <tr>
+                <td>Portugués</td>
+                <td>Intermedio</td>
+            </tr>
+            <tr>
+                <td>Japonés</td>
+                <td>Intermedio</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Sección experiencia (Grid) -->
+    <section id="experiencia">
+        <h2>Experiencia</h2>
+        <div class="experiencia-container">
+            <div class="experiencia-item">
+                <h3>Bases de Datos en SQL</h3>
+                <h4>Proyecto de clase | 2025 - Presente</h4>
+                <p>
+                    Participación en la implementación de bases de datos utilizando SQL y phpMyAdmin, 
+                    enfocándose en la optimización de consultas a bases de datos y la integración 
+                    de API RESTful.
+                </p>
+            </div>
+            <div class="experiencia-item">
+                <h3>Proyecto de IA para Clasificación de Imágenes</h3>
+                <h4>Proyecto personal en grupo | Junio de 2024</h4>
+                <p>
+                    Desarrollo de un modelo de aprendizaje automático utilizando Python y TensorFlow 
+                    para la clasificación automática de imágenes.
+                </p>
+            </div>
+            <div class="experiencia-item">
+                <h3>Desarrollo de un Sitio Web Responsive</h3>
+                <h4>Proyecto de clase | Febrero de 2024</h4>
+                <p>
+                    Creación de un sitio web completamente responsivo con HTML, CSS y JavaScript, 
+                    incluyendo un menú interactivo y una sección de contacto funcional.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto (Formulario) -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required=""> <input type="email" placeholder="Correo" required=""> 
+            <textarea placeholder="Mensaje"></textarea> <button type="submit" class="button-contact">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de la página -->
+    <footer>
+        <p>© 2025 - Anh Friñas Garrido. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

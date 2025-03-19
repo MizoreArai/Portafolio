@@ -1,0 +1,409 @@
+/* Aplicar un root para los estilos */
+:root {
+    --bg-color: #6A5ACD;
+    --other-color-1: #f76c6c;
+    --other-color-2: #44318d;
+    --other-color-3: #b474e9;
+    --other-color-4: #2C2C2C;
+    --other-color-5: #40E0D0;
+    --other-color-6: #FFC0CB;
+    --text-color: white;
+    --subtitles-color: #a4b3b6;
+    --title-size: 24px;
+    --title1-size: 18px;    
+    --subtitle-size: 14px;
+    --font-size: 16px;
+    --font-weight: bold;
+    --font-style: italic;
+}
+
+/* Estilos globales */
+* {
+    font-size: var(--font-size);
+    color: var(--text-color);
+}
+
+/* Estilos del body y en general*/
+body {
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+}
+
+h2 {
+    font-weight: var(--font-weight);
+    font-size: var(--title-size);
+    margin-left: 20px;
+}
+
+h3 {
+    font-weight: var(--font-weight);
+    font-size: var(--title1-size);
+}
+
+h4 {
+    font-style: var(--font-style);
+    font-size: var(--subtitle-size);
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Menú de navegación (Flexbox) */
+header {
+    background: var(--other-color-4);
+    color: var(--text-color);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 5px;
+    padding: 5px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--other-color-1);
+}
+
+/* Sección de inicio (Flexbox) */
+#inicio {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+#inicio img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.texto-inicio {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px;
+}
+
+#inicio h2 {
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+
+/* Sección Sobre Mí (flex + Grid) */
+#sobre-mi {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 20px;
+    background-color: var(--other-color-4);
+}
+
+.grid-container01 {
+    display: flex;
+    flex-grow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 5px 20px;
+}
+
+.hab1 {
+    flex-wrap: nowrap;
+    flex-basis: 50%;
+    background: var(--other-color-1);
+    border-radius: 10px;
+    padding: 20px;   
+    border: 1px solid var(--other-color-1);
+    box-shadow: 0 0 10px var(--other-color-3, 0.1); 
+}
+
+#sobre-mi h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.hab1 ul {
+    margin: 0 20px 10px 20px;
+}
+
+.hab2 {
+    flex-wrap: nowrap;
+    flex-basis: 50%;
+    background: var(--other-color-1);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid var(--bg-color);
+    box-shadow: 0 0 10px var(--other-color-3, 0.1); 
+}
+
+.hab2 p {
+    padding: 0 20px 7px 20px;
+}
+
+.grid-container02 {
+    padding: 20px;
+    height: 90px;
+    background-color: var(--other-color-1);
+    box-shadow: 0 0 10px var(--other-color-3, 0.1); 
+    border: 1px solid var(--bg-color);
+    border-radius: 10px;
+    margin: 5px 20px;
+}
+
+.grid-container03 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: cv1 cv2 cv3;
+    grid-gap: 20px;
+    margin: 5px 20px 40px 20px;
+}
+
+.cv1 {
+    flex-basis: 33%;
+    height: 190px;
+    background-color: var(--other-color-1);
+    border-radius: 10px;
+    border: 1px solid var(--other-color-5);
+    box-shadow: 0 0 10px rgba(92, 139, 114, 0.495);
+}
+
+.cv1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.cv2 {
+    flex-basis: 33%;
+    height: 150px;
+    background-color: var(--other-color-1);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid var(--other-color-3);
+    box-shadow: 0 0 10px var(--other-color-3, 0.1); 
+}
+
+.cv3 {
+    flex-basis: 33%;
+    height: 150px;
+    background-color: var(--other-color-1);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid var(--other-color-3);
+    box-shadow: 0 0 10px var(--other-color-3, 0.1); 
+}
+
+/* Proyectos Destacados */
+.proyectos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.proyecto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--other-color-4);
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 150px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.imagen-p {
+    width: 90%;
+    height: 150px;
+    box-shadow: 0 0 10px var(--bg-color, 0.1);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.proyecto h3 {
+    color: var(--other-color-1);
+}
+
+#button-git {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px 30px 10px 30px;
+    background-color: var(--other-color-4);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#button-git a {
+    text-decoration: none;
+}
+
+#button-git:hover {
+    background-color: var(--other-color-1);
+}
+
+/* Idiomas */
+#idiomas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--other-color-4);
+    padding: 20px;
+}
+
+table {
+    width: 30%;
+    border-collapse: collapse;
+    background-color: var(--text-color);
+    margin-bottom: 10px;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+tr th {
+    text-align: center;
+    background-color: var(--other-color-1);
+    color: var(--text-color);
+}
+
+tr td {
+    text-align: center;
+    color: var(--other-color-4);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--other-color-6);
+}
+
+
+/* Experiencia (Flexbox) */
+.experiencia-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 10px 20px 10px;
+}
+
+.experiencia-item {
+    border: 1px solid var(--other-color-2);
+    background-color: var(--other-color-4);
+    padding: 10px 20px 10px 20px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.experiencia-item h3 {
+    color: var(--other-color-1);
+}
+
+.experiencia-item h4 {
+    color: var(--other-color-6);
+}
+
+/* Formulario de Contacto */
+#contacto {
+    background-color: var(--other-color-4);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#contacto h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.button-contact {
+    background: var(--other-color-1);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.button-contact:hover {
+    background: var(--bg-color);
+}
+
+/* Footer */
+footer {
+    background: var(--other-color-4);
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries: Teléfonos (menos de 600px) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Menú vertical */
+        gap: 10px;
+    }
+
+    #inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #inicio img {
+        width: 100px; /* Perfil más pequeña */
+    }
+
+    .grid-container01, .grid-container03 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hab1, .hab2, .cv1, .cv2, .cv3 {
+        flex-basis: 100%;
+    }
+
+    .proyectos-container {
+        grid-template-columns: 1fr; /* Solo una columna */
+    }
+
+    table {
+        width: 100%; /* Máxima anchura */
+    }
+}
